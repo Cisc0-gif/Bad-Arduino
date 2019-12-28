@@ -13,9 +13,9 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 
 ### P4wnP1 ALOA
 * RubberDucky HID Scripts
-..*  -File_Thief - Copy files to storage
-..*  -Net_Share - Begin network share of C:\ drive
-..*  -Reverse_TCP - Runs payload (Reverse TCP Stager) from pastebin raw source in powershell back to host
+  *  -File_Thief - Copy files to storage
+  *  -Net_Share - Begin network share of C:\ drive
+  *  -Reverse_TCP - Runs payload (Reverse TCP Stager) from pastebin raw source in powershell back to host
 
 ## Getting Started
 
