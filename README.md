@@ -10,6 +10,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 ### Arduino
 * RFID Badge Cloner
 * RFID Badge Cloner w/ LCD Display
+* Buzzer and LED Distraction
 
 ### P4wnP1 ALOA
 * RubberDucky HID Scripts
