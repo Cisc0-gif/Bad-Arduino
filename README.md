@@ -18,6 +18,9 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
   * Net_Share - Begin network share of C:\ drive
   * Reverse_TCP - Runs payload (Reverse TCP Stager) from pastebin raw source in powershell back to host
 
+### Raspberry Pi
+* RPi Motion Detection Surveillance Camera
+
 ## Getting Started
 
 To begin, install Arduino for your OS (Win, Lin, OSX), then git, and then run ``` git clone https://github.com/Cisc0-gif/Bad-Arduino.git ``` to clone the repo.
