@@ -867,7 +867,8 @@ f.close()
 
 with open('/home/pi/.bashrc', 'a+') as f:
   f.write("alias arm_cam='bash ~/.motion/arm.sh'")
+  f.write("alias disarm_cam='sudo service motion stop'")
 f.close()
 
 print('[+]Setup Complete!')
-print("[*]To arm camera run arm.sh, and to disarm use the command 'sudo service motion stop'")
+print("[*]Camera controls: arm_cam & disarm_cam")
