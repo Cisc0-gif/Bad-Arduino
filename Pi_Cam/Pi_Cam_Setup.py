@@ -4,8 +4,8 @@ import os
 
 os.system('sudo apt-get install motion')
 
-os.system('sudo mkdir ~/.motion')
-os.chdir('~/.motion')
+os.system('sudo mkdir /home/pi/.motion')
+os.chdir('/home/pi/.motion')
 
 #~/.motion/motionalert.py
 motionalert = '''\
@@ -834,17 +834,17 @@ on_picture_save mpack -s "Camera has detected Motion!" %f YourEmail@gmail.com
 
 """
 
-while open('motion.conf', 'w+') as f: #write motion_config to ~/.motion/motion.conf
+with open('motion.conf', 'w+') as f: #write motion_config to ~/.motion/motion.conf
   f.write(motion_config)
 f.close()
 
 os.chdir('/etc/default')
 
-while open('motion', 'w+') as f: #write daemon to /etc/default/motion
+with open('motion', 'w+') as f: #write daemon to /etc/default/motion
   f.write(daemon)
 f.close()
 
-os.chdir('~/.motion')
+os.chdir('/home/pi/.motion')
 
 #~/.motion/arm.sh
 arm = """\
@@ -857,12 +857,16 @@ sudo motion -c ~/.motion/motion.conf
 echo "[*]Armed!"
 """
 
-while open('arm.sh', 'w+') as f: #write arm to ~/.motion/arm.sh
+with open('arm.sh', 'w+') as f: #write arm to ~/.motion/arm.sh
   f.write(arm)
 f.close()
 
-while open('motionalert.py') as f: #write motionalert to ~/.motion/motionalert.py
+with open('motionalert.py', 'w+') as f: #write motionalert to ~/.motion/motionalert.py
   f.write(motionalert)
+f.close()
+
+with open('/home/pi/.bashrc', 'a+') as f:
+  f.write("alias arm_cam='bash ~/.motion/arm.sh'")
 f.close()
 
 print('[+]Setup Complete!')
