@@ -866,7 +866,7 @@ with open('motionalert.py', 'w+') as f: #write motionalert to ~/.motion/motional
 f.close()
 
 with open('/home/pi/.bashrc', 'a+') as f:
-  f.write("alias arm_cam='bash ~/.motion/arm.sh'")
+  f.write("alias arm_cam='bash ~/.motion/arm.sh'\n")
   f.write("alias disarm_cam='sudo service motion stop'")
 f.close()
 
