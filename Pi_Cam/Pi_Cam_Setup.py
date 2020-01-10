@@ -12,10 +12,13 @@ motionalert = '''\
 #! /usr/bin/env python3
 import smtplib
 import time
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+
+os.system('raspistill -o snapshot.jpg')
 
 fromaddr = 'yoursenderemail@gmail.com'
 toaddrs  = 'yourreceivingemail@*.com'
