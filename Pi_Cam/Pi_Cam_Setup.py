@@ -327,7 +327,7 @@ emulate_motion off
 # Picture with most motion of an event is saved when set to 'best'.
 # Picture with motion nearest center of picture is saved when set to 'center'.
 # Can be used as preview shot for the corresponding movie.
-output_pictures center
+output_pictures first
 
 # Output pictures with only the pixels moving object (ghost images) (default: off)
 output_debug_pictures off
@@ -866,7 +866,7 @@ with open('motionalert.py', 'w+') as f: #write motionalert to ~/.motion/motional
 f.close()
 
 with open('/home/pi/.bashrc', 'a+') as f:
-  f.write("alias arm_cam='bash ~/.motion/arm.sh'")
+  f.write("alias arm_cam='bash ~/.motion/arm.sh'\n")
   f.write("alias disarm_cam='sudo service motion stop'")
 f.close()
 
