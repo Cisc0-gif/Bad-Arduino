@@ -513,7 +513,7 @@ target_dir /var/lib/motion
 # File extension .jpg or .ppm is automatically added so do not include this.
 # Note: A symbolic link called lastsnap.jpg created in the target_dir will always
 # point to the latest snapshot, unless snapshot_filename is exactly 'lastsnap'
-snapshot_filename %v-%Y%m%d%H%M%S-snapshot
+snapshot_filename %v--%Y-%m-%d-%H:%M:%S-snapshot
 
 # File path for motion triggered images (jpeg or ppm) relative to target_dir
 # Default: %v-%Y%m%d%H%M%S-%q
@@ -522,12 +522,12 @@ snapshot_filename %v-%Y%m%d%H%M%S-snapshot
 # File extension .jpg or .ppm is automatically added so do not include this
 # Set to 'preview' together with best-preview feature enables special naming
 # convention for preview shots. See motion guide for details
-picture_filename %v-%Y%m%d%H%M%S-%q
+picture_filename %v--%Y-%m-%d-%H:%M:%S-%q
 
 # File path for motion triggered ffmpeg films (movies) relative to target_dir
 # Default: %v-%Y%m%d%H%M%S
 # File extensions(.mpg .avi) are automatically added so do not include them
-movie_filename %v-%Y%m%d%H%M%S
+movie_filename %v--%Y-%m-%d-%H:%M:%S
 
 # File path for timelapse movies relative to target_dir
 # Default: %Y%m%d-timelapse
