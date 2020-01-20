@@ -26,7 +26,7 @@ D5           D4           D4
 D6           D3           D3
 D7           D2           D2
 A            3.3V         3.3V
-/*
+*/
 #include <SPI.h>
 #include <MFRC522.h>
 #include <LiquidCrystal.h>
