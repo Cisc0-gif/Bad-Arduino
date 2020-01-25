@@ -290,7 +290,7 @@ lightswitch 0
 # Picture frames must contain motion at least the specified number of frames
 # in a row before they are detected as true motion. At the default of 1, all
 # motion is detected. Valid range: 1 to thousands, recommended 1-5
-minimum_motion_frames 1
+minimum_motion_frames 3
 
 # Specifies the number of pre-captured (buffered) pictures from before motion
 # was detected that will be output at motion detection.
