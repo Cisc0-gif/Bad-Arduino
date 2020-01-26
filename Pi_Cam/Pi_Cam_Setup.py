@@ -856,7 +856,7 @@ echo "[*]Starting motion server..."
 sudo motion -c ~/.motion/motion.conf
 echo "[*]Staring snapshot server in /var/lib/motion on port 9082"
 cd /var/lib/motion
-sudo python -m SimpleHTTPServer 9082 &
+nohup sudo python -m SimpleHTTPServer 9082 &
 echo "[*]Armed!"
 """
 
