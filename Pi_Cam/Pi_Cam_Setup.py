@@ -854,6 +854,9 @@ echo "[*]Starting motion daemon..."
 sudo service motion start
 echo "[*]Starting motion server..."
 sudo motion -c ~/.motion/motion.conf
+echo "[*]Staring snapshot server in /var/lib/motion on port 9082"
+cd /var/lib/motion
+sudo python -m SimpleHTTPServer 9082 &
 echo "[*]Armed!"
 """
 
@@ -867,7 +870,7 @@ f.close()
 
 with open('/home/pi/.bashrc', 'a+') as f:
   f.write("alias arm_cam='bash ~/.motion/arm.sh'\n")
-  f.write("alias disarm_cam='sudo service motion stop'")
+  f.write("alias disarm_cam='sudo service motion stop && ps aux | grep python'")
 f.close()
 
 print('[+]Setup Complete!')
