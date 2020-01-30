@@ -867,7 +867,7 @@ echo "[*]Armed!"
 """
 
 #~/.motion/SecureHTTPServer.py
-SecureHTTPServer.py = """\
+SecureHTTPServer = """\
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -914,6 +914,10 @@ if __name__ == '__main__':
 
 with open('arm.sh', 'w+') as f: #write arm to ~/.motion/arm.sh
   f.write(arm)
+f.close()
+
+with open('SecureHTTPServer.py', 'w+') as f: #write SecureHTTPServer to ~/.motion/SecureHTTPServer.py
+  f.write(SecureHTTPServer)
 f.close()
 
 with open('motionalert.py', 'w+') as f: #write motionalert to ~/.motion/motionalert.py
