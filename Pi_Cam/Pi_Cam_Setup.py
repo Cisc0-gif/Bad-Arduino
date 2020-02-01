@@ -30,6 +30,7 @@ html_text = """\
 <h1>Motion Detected</h1>
 <br>
 <a href="Internal/External IP:9081">View Camera Stream</a>
+<br>
 <a href="Internal/External IP:9082">View Camera Motion Alert Images</a>
 </body>
 </html>
