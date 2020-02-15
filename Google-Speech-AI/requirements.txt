@@ -1,0 +1,7 @@
+speech_recognition
+pyttsx3
+pywin32
+pypiwin32
+python-engineio
+PyAdudio
+PocketSphinx
