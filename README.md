@@ -11,6 +11,7 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 * RFID Badge Cloner
 * RFID Badge Cloner w/ LCD Display
 * Buzzer and LED Distraction
+* CCTV UV/IR Masker
 
 ### P4wnP1 ALOA
 * RubberDucky HID Scripts
