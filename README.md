@@ -2,9 +2,6 @@
 
 The Bad Arduino PenTesting Tool Kit is a ready-to-go script repo allowing users to make functioning pentesting hardware in minutes such as RFID Badge Cloners to Noise Makers and anything in between.
 
-DISCLAIMER: This tool is for educational purposes only. I am not responsible for the misuse of others of this tool in any way, shape or form.
-
-
 ## Features
 
 ### Arduino
@@ -29,6 +26,10 @@ DISCLAIMER: This tool is for educational purposes only. I am not responsible for
 
 To begin, install Arduino for your OS (Win, Lin, OSX), then git, and then run ``` git clone https://github.com/Cisc0-gif/Bad-Arduino.git ``` to clone the repo.
 
+## Legal Disclaimer
+
+Usage of KITT-Lite and/or the tools installed with KITT-Lite for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+
 ## Built With
 
 * LCD1602 Module - LCD Display for Arduino
@@ -48,8 +49,7 @@ To begin, install Arduino for your OS (Win, Lin, OSX), then git, and then run ``
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.txt file for details
-
+This project is licensed under the GPU General Public License v3 - see the LICENSE file for details
 
 ## Acknowledgments
 
